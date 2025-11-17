@@ -1,0 +1,73 @@
+React + TypeScript Assignment: To-Do List App
+
+Objective
+  Build a single-page To-Do List application using React.js and Nodejs with TypeScript. The app should allow users to create, edit, and delete tasks. Additionally, each task row should have a different background color based on the current date and task completion status.
+
+  Build a simple RESTful API using NodeJS and Express that allows users to manage a to-do list. The API should support basic CRUD operations and store data in memory/writing it to a json file.
+
+Features to Implement
+	1	Create Task
+		◦	FE :
+			⁃	Input fields for task title and due date.
+			⁃	Button to add the task to the list.
+		◦	BE :
+			⁃	Endpoint: POST /todos.
+			⁃	Response: Created to-do item with unique ID.
+	2	Edit Task
+    ◦	FE :
+      ⁃	Ability to update the title and due date of an existing task.
+    ◦	BE :
+      ⁃	Endpoint: PUT /todos.
+      ⁃	Response: update a to-do item.
+	3	Delete Task
+    ◦	FE :
+      ⁃	Button to remove a task from the list.
+    ◦	BE :
+      ⁃	Endpoint: DELETE /todos/:id.
+      ⁃	Response: Success message or deleted item.
+	4	Task Completion
+    ◦	FE :
+      ⁃	Checkbox or toggle to mark a task as completed.
+    ◦	BE :
+      ⁃	Endpoint: PATCH /todos/:id/complete.
+      ⁃	Response: Updated item with completed: true.
+	5 Row Coloring Logic
+    ◦	If the task is completed: light green background.
+    ◦	If the task is overdue (due date < current date): light red background.
+    ◦	If the task is due today: light yellow background.
+    ◦	If the task is upcoming (due date > current date): default background.
+
+Technical Requirements
+	•	Use React.js with TypeScript.
+	•	Node js, Express js.
+	•	Use functional components and React hooks.
+	•	Create a JSON file to store to-do items (no DB)
+	•	Use Materil UI V4 for component and styling.
+	•	input validation in Backend.
+
+Unit Testing
+	•	Use Jest for testing all components and scenarios .
+
+Instructions for Candidate
+	•	Create a single-page React app with the above features.
+	•	Use TypeScript for all components and types.
+	•	Ensure the app is responsive and user-friendly.
+	•	Include comments in your code to explain key logic.
+	•	Maintain Clear Folder structure.
+	•	Submit your code as a zip file.
+
+Evaluation Criteria
+	•	✅ Correctness and completeness of features.
+	•	✅ Code readability and structure.
+	•	✅ Proper use of TypeScript types and interfaces.
+	•	✅ UI/UX quality and responsiveness.
+	•	✅ Implementation of row coloring logic.
+	•	✅ Bonus: thoughtful error handling and edge case coverage.
+
+Submission
+Please submit your solution as a zip file containing the project. Make sure to include a README file with setup instructions.
+Good luck!
+
+AI
+Do not use co-pilot or other tools to generate code.
+
